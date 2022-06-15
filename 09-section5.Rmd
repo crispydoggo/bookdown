@@ -53,30 +53,113 @@ Based on the results from the Preparedness Diagnostic analysis, Dominica is curr
 The results of this diagnosis for each of the dimensions analysed (and their ideal elements) are presented below in a synthetic manner. For more detailed information on each dimension, elements, and sub-elements, please see [appendix C](#appendixC) and visit the interactive platform with all the disaggregated findings of this PD.
 
 
-```{r setup, include=FALSE}
+```{r , include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-knitr::opts_chunk$set( out.width = '120%')
+knitr::opts_chunk$set( out.width = '250%')
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+
+
 ```
 
 ### Institutionalisation 
 
-<p align="justify"> 
+
 
 |    Key Message  |
-|:--------------------------|:----------------|
-|   <font size="2"> Dominica has broad normative frameworks in planning, significant advances in budgeting, and slight advances in monitoring. The Climate Resilience Executive Agency for Dominica (CREAD), a cross-cutting and temporary institution created to achieve Dominica's long-term goal (become the first climate resilient nation), plays a relevant role in supporting MDAs in the monitoring and implementation of programmes. However, there are not enough norms and clear responsibilities to foster the continuous improvement in planning, budgeting, and implementation based on the use of M&E results, and to articulate a whole of government RBM system. </font>     |     `r knitr::include_graphics("./images/dim_1.png") `   | 
+|:-------------------------------------|:----------|
+|   <font size="2"> Dominica has broad normative frameworks in planning, significant advances in budgeting, and slight advances in monitoring. The Climate Resilience Executive Agency for Dominica (CREAD), a cross-cutting and temporary institution created to achieve Dominica's long-term goal (become the first climate resilient nation), plays a relevant role in supporting MDAs in the monitoring and implementation of programmes. However, there are not enough norms and clear responsibilities to foster the continuous improvement in planning, budgeting, and implementation based on the use of M&E results, and to articulate a whole of government RBM system. </font>     |   `r knitr::include_graphics("./images/dim_1.png") `  |
 |           |                      |  
 
-+------------------------------------------+------------------------+
-| Ideal element                           | LEVEL OF PROGRESS      | 
-+==========================================+========================+
-|1. There is a documented, approved, and binding RBM Policy within the government   |    22%      | 
-+------------------------------------------+--------------------------+
+
+```{r , echo=FALSE, results="asis"}
+library(readxl)
+library(kableExtra)
+
+results <- read_excel("./Data/results.xlsx")
+
+dim_1 <-  results %>% 
+          filter( dimension_id == 1) %>% 
+          select( -dimension, -dimension_id, -element_id ) 
+
+kable(dim_1) %>%
+          kable_paper("striped", full_width = T, font_size = 12) %>%
+          column_spec(1, bold = T, border_right = T) %>%
+          column_spec(2, width = "33em")
+          
+
+```
+
+
+### Execution Framework 
 
 
 
+|    Key Message  |
+|:-------------------------------------|:----------|
+|   <font size="2"> The Ministry of Planning gathers monthly reports from all the MDAs regarding their performance. Also, both national planning documents (NRDS and CRRP) have monitoring frameworks. However, these monitoring exercises are not structured in a clear process and are not articulated. There is no common language among MDAs around M&E as well as no M&E network to perform M&E activities.  Also, there is no transparency regarding the monitoring activities and the results. </font>     |   `r knitr::include_graphics("./images/dim_2.png") `  |
+|           |                      |  
 
 
+```{r , echo=FALSE, results="asis"}
+dim_1 <-  results %>% 
+          filter( dimension_id == 2) %>% 
+          select( -dimension, -dimension_id, -element_id ) 
+
+kable(dim_1) %>%
+          kable_paper("striped", full_width = T, font_size = 12) %>%
+          column_spec(1, bold = T, border_right = T) %>%
+          column_spec(2, width = "33em")
+          
+
+```
+
+
+### Technical capabilities
+
+
+|    Key Message  |
+|:-------------------------------------|:----------|
+|   <font size="2"> There are skills to conduct planning, budgeting, and monitoring for results. The creation of CREAD and the development of the CRRP has translated the national's planning into action with clear priorities and targets to be achieved. The national budgeting function is fulfilled based on the collaboration between planning and finance. Also, ministries such as planning conduct regular monitoring, coordinating with the other MDAs. However, these skills are not homogeneous among MDAs. </font>     |   `r knitr::include_graphics("./images/dim_3.png") `  |
+|           |                      |  
+
+
+```{r , echo=FALSE, results="asis"}
+
+dim_1 <-  results %>% 
+          filter( dimension_id == 3) %>% 
+          select( -dimension, -dimension_id, -element_id ) 
+
+kable(dim_1) %>%
+          kable_paper("striped", full_width = T, font_size = 12) %>%
+          column_spec(1, bold = T, border_right = T) %>%
+          column_spec(2, width = "33em")
+          
+
+```
+
+
+### Use of evidence
+
+
+|    Key Message  |
+|:-------------------------------------|:----------|
+|   <font size="2"> There are skills to conduct planning, budgeting, and monitoring for results. The creation of CREAD and the development of the CRRP has translated the national's planning into action with clear priorities and targets to be achieved. The national budgeting function is fulfilled based on the collaboration between planning and finance. Also, ministries such as planning conduct regular monitoring, coordinating with the other MDAs. However, these skills are not homogeneous among MDAs. </font>     |   `r knitr::include_graphics("./images/dim_4.png") `  |
+|           |                      |  
+
+
+```{r , echo=FALSE, results="asis"}
+
+dim_1 <-  results %>% 
+          filter( dimension_id == 4) %>% 
+          select( -dimension, -dimension_id, -element_id ) 
+
+kable(dim_1) %>%
+          kable_paper("striped", full_width = T, font_size = 12) %>%
+          column_spec(1, bold = T, border_right = T) %>%
+          column_spec(2, width = "33em")
+          
+
+```
 
 ##	Main challenges to strengthen the RBM system
 

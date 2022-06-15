@@ -1,5 +1,11 @@
 # (APPENDIX) Appendix {-}
 
+```{r , include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+
+```
+
 # Conceptual framework (CLEAR LAC) {#appendixA}
 
 ## Key dimensions of a sustainable RBM System
@@ -21,6 +27,76 @@ One significant component to strengthen RBM in the Community is to build, in a p
 The four dimensions previously mentioned were conceptualized as necessary components when building an operating and sustainable RBM system. To have a better understanding of what the progress in each dimension entails, we propose a set of ideal elements and sub-elements taken from different contexts and experiences where they have been successfully implemented or recommended. Each dimension has a set of elements that represent activities, documents, normative frameworks, skills, incentives, etc.; and every element has a set of sub-elements that describe the ideal characteristics of the element. The sub-elements allow to translate concepts into practice, and, after gathering and analysing information, this knowledge can be translated into specific actions.
 
 Unlike the dimensions, as RBM Systems are designed and built considering contextual factors, some elements and sub-elements should be taken as a guide as different contexts will result in variations on their interpretation and level of relevance/priorities. This framework allows for adaptations, recognizing that every context is particular and that there is no unique checklist that may apply to all contexts.
+
+```{r , echo=FALSE, results="asis"}
+library(dplyr)
+library(readxl)
+library(kableExtra)
+
+ideal <- read_excel("./Data/ideal_rbm.xlsx")
+
+aux <- ideal %>% 
+  filter( dimension_id == 1)
+
+ideal %>% 
+  filter( dimension_id == 1, sub_id != 0) %>% 
+  select("I. Institutionalisation Ideal elements" = indicator) %>% 
+  kbl( caption = "Institutionalisation Elements") %>%
+  kable_paper("striped", full_width = F)%>%
+  pack_rows(aux$indicator[1], 1, 7) %>%
+  pack_rows(aux$indicator[9], 8, 13) %>% 
+  pack_rows(aux$indicator[16], 14, 20) %>% 
+  pack_rows(aux$indicator[24], 21, 29) %>% 
+  pack_rows(aux$indicator[34], 30, 33) %>%
+  pack_rows(aux$indicator[39], 34, 40) %>%
+  pack_rows(aux$indicator[47], 41, 49) %>%
+  pack_rows(aux$indicator[57], 50, 56) %>%
+  scroll_box(width = "700px", height = "300px")
+
+aux <- ideal %>% 
+  filter( dimension_id == 2)
+
+ideal %>% 
+  filter( dimension_id == 2, sub_id != 0) %>% 
+  select("II. Excecution Framework Ideal elements" = indicator) %>% 
+  kbl( caption = "Excecution Framework Elements") %>%
+  kable_paper("striped", full_width = F)%>%
+  pack_rows(aux$indicator[1], 1, 5) %>%
+  pack_rows(aux$indicator[7], 6, 9) %>% 
+  pack_rows(aux$indicator[12], 10, 16) %>% 
+  pack_rows(aux$indicator[20], 17, 20) %>% 
+  scroll_box(width = "700px", height = "300px")
+
+aux <- ideal %>% 
+  filter( dimension_id == 3)
+
+ideal %>% 
+  filter( dimension_id == 3, sub_id != 0) %>% 
+  select("III. Technical Capabilities Ideal elements" = indicator) %>% 
+  kbl( caption = "Excecution Framework Elements") %>%
+  kable_paper("striped", full_width = F)%>%
+  pack_rows(aux$indicator[1], 1, 4) %>%
+  pack_rows(aux$indicator[6], 5, 7) %>% 
+  pack_rows(aux$indicator[10], 8, 10) %>% 
+  pack_rows(aux$indicator[14], 11, 14) %>% 
+  scroll_box(width = "700px", height = "300px")
+
+aux <- ideal %>% 
+  filter( dimension_id == 4)
+
+ideal %>% 
+  filter( dimension_id == 4, sub_id != 0) %>% 
+  select("IV. Use of Evidence Ideal elements" = indicator) %>% 
+  kbl( caption = "Excecution Framework Elements") %>%
+  kable_paper("striped", full_width = F)%>%
+  pack_rows(aux$indicator[1], 1, 5) %>%
+  pack_rows(aux$indicator[7], 6, 8) %>% 
+  pack_rows(aux$indicator[11], 9, 18) %>% 
+  pack_rows(aux$indicator[22], 19, 20) %>% 
+  scroll_box(width = "700px", height = "300px")
+    
+
+```
 
 ##	Levels of progress
 

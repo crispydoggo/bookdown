@@ -1,5 +1,3 @@
-fig:nice-fig
-tab:nice-tab
 fig:figure1
 fig:figure2
 fig:figure3
@@ -10,11 +8,11 @@ tab:table
 fig:figure5
 fig:figure6
 fig:figure7
+tab:unnamed-chunk-1
+tab:unnamed-chunk-2
 fig:figure8
 introduction
 section2
-chapters-and-sub-chapters
-captioned-figures-and-tables
 section3
 theory-of-change-of-a-sustainable-rbm-system
 ideal-rbm-system-and-working-process
@@ -24,6 +22,9 @@ dominicas-rbm-profile
 section5
 results-by-dimension
 institutionalisation
+execution-framework
+technical-capabilities
+use-of-evidence
 main-challenges-to-strengthen-the-rbm-system
 section6
 stakeholders-contribution-analysis

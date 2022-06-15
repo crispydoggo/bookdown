@@ -1,8 +1,4 @@
-# Dominica’s profile^[Centro de Estudios Internacionales Gilberto Bosques. (april, 2020). Mancomunidad de Dominica. Ficha Técnica. https://centrogilbertobosques.senado.gob.mx/docs/F_Dominica.pdf
-Dominica Population 2022 (Demographics, Maps, Graphs). (2022). World Population Review. https://worldpopulationreview.com/countries/dominica-population 
-Editors of Encyclopedia Britannica. (s. f.). Dominica summary. Encyclopedia Britannica. https://www.britannica.com/summary/Dominica 
-Freedom House. (2020). Dominica. https://freedomhouse.org/country/dominica/freedom-world/2020
-] {#section4}
+# Dominica’s profile {#section4}
 
 Dominica, officially Commonwealth of Dominica, is an island country in the Caribbean, and is part of the Lesser Antilles archipelago. The country has a population of 72,344 people and around 16,571 of its habitants are concentrated in the capital city of Roseau^[World Population Review. Dominica Population 2022. https://worldpopulationreview.com/countries/dominica-population] . Dominica became a member of the West Indian Federation in 1958 in its search for independence and was granted independence as a republic in 1978, after becoming an associate state of the United Kingdom in 1967.
 
@@ -10,7 +6,11 @@ Dominica is a parliamentary democracy. As a Republic, the head of State is the p
 
 The Legislative branch is made up of the House of Representatives, with a total of 32 members; 21 are regional representatives elected for a five-year term and 9 are senators appointed by the president, five on the advice of the prime minister, and four on the advice of the opposition leader. The president is also considered a member of the parliament, and the last seat is for the speaker of the House of Assembly, elected by the elected members after an election. The latest general elections were held on December 2019 resulting in a victory for the ruling party, the Dominica Labour Party. 
 
-As a small country, Dominica mainly relies on its membership in international and regional organizations to make its vote count, therefore most of its foreign policy is exercised through these forums. At the international level, Dominica is a member of CARIFORUM, CARICOM, the Organization of Eastern Caribbean States, and the Organization of American States (OAS).
+As a small country, Dominica mainly relies on its membership in international and regional organizations to make its vote count, therefore most of its foreign policy is exercised through these forums. At the international level, Dominica is a member of CARIFORUM, CARICOM, the Organization of Eastern Caribbean States, and the Organization of American States (OAS)^[Centro de Estudios Internacionales Gilberto Bosques. (april, 2020). Mancomunidad de Dominica. Ficha Técnica. https://centrogilbertobosques.senado.gob.mx/docs/F_Dominica.pdf
+Dominica Population 2022 (Demographics, Maps, Graphs). (2022). World Population Review. https://worldpopulationreview.com/countries/dominica-population 
+Editors of Encyclopedia Britannica. (s. f.). Dominica summary. Encyclopedia Britannica. https://www.britannica.com/summary/Dominica 
+Freedom House. (2020). Dominica. https://freedomhouse.org/country/dominica/freedom-world/2020
+].
 
 Table: (\#tab:table2) General Statistics of Dominica
 
